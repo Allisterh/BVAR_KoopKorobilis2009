@@ -1,9 +1,11 @@
 
+# source("./matlab_Functions.r")
 # BVAR_FULL.m 
-library("MASS")
-library("matlab")
-library("mvtnorm")
-library("R.matlab")
+# library("MASS")
+# library("matlab")
+# library("mvtnorm")
+# library("R.matlab")
+
 # This code replicates the results from the 1st empirical illustration 
 # in Koop and Korobilis (2009).
 #
@@ -46,7 +48,7 @@ library("R.matlab")
 #------------------------------LOAD DATA-----------------------------------
 # Load Quarterly US data on inflation, unemployment and interest rate, 
 # 1953:Q1 - 2006:Q3
-Yraw = as.matrix(read.table("/Users/user/Dropbox/Korobilis Code/Bayesian Macroeconometrics/1 R Code for Bayesian VARs/R/Yraw.dat"))
+Yraw = as.matrix(read.table("Yraw.dat"))
 #Yraw = Yraw[29:189,];
 # or Simulate data from a simple VAR Data Generating process
 #Yraw = bvardgp();
@@ -676,3 +678,4 @@ if (impulses==1) {
 toc()
 
 ### END
+
