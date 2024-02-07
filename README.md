@@ -1,0 +1,1 @@
+Estimation of Bayesian Vector autoregressions using the model of Koop and Korbolis (2009). The codes are based on matlab codes provided by the authors and have been translated to R. For more information see, [BVAR](https://sites.google.com/site/dimitriskorobilis/matlab).
